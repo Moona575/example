@@ -1,0 +1,75 @@
+/* CSS for Dropdown and Logout */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+[x-data]:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-link:last-child {
+    border-bottom: none;
+}
+
+.dropdown-link:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Navigation Menu */
+
+[x-data="open"] .responsive-nav-link {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+[x-data="open"] .responsive-nav-link:hover {
+    background-color: #f0f0f0;
+}
+
+/* Styles for User Info in Dropdown */
+.dropdown-user-info {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-user-info .user-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.dropdown-user-info .user-email {
+    color: #555;
+}
+
+/* Logout Button Styles */
+.logout-button {
+    display: block;
+    padding: 10px 15px;
+    color: #f44336; /* Red color for logout */
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+}
+
+.logout-button:hover {
+    background-color: #fce4e4; /* Light red background on hover */
+}
